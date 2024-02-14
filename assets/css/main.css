@@ -363,7 +363,7 @@
     height: 16%; 
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease; 
+    transition: 0.8s ease; 
 }
 .member:hover .hover-icon {
     width: 100%;
@@ -400,7 +400,6 @@
 }
 .hover-icon a:hover{
     color:#86c33a;
-    background-color: white;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -430,8 +429,8 @@
     height: 100%;
 }
 .img-job img {
-    max-width: 100%; /* Resimlerin maksimum genişliği */
-    height: auto; /* Resimlerin oranlarını korumak için */
+    max-width: 100%; 
+    height: auto; 
 }
 .img-job::before {
     content: '';
@@ -822,7 +821,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 180px;
     }
     .info-section .container {
         display: flex;
@@ -839,6 +838,12 @@
         display: flex;
         flex-direction: column;
     }
+    .correct-social {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
 
 }
 
@@ -852,7 +857,6 @@
         flex-direction: column;
         margin-bottom: 20px;
         gap: 10px;
-    
     }
     .info {
         justify-content: center;
