@@ -141,18 +141,21 @@
     border-radius: 100px;
     transition: 0.5s;
     border: 2px solid black;
-    
 }
 .button-part-second a {
     text-decoration: none;
     color: black;
 }
-.button-part-second:hover  {
+.button-part-second:hover {
     color: white;
     background-color: rgb(80, 115, 37);
     width: 165px;
     height: 55px;
     border-radius: 100px;
+    border: transparent;
+}
+.button-part-second:hover a {
+    color: white;
     border: transparent;
 }
 .info-boxes {
@@ -363,7 +366,7 @@
     height: 16%; 
     width: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease; 
+    transition: 0.8s ease; 
 }
 .member:hover .hover-icon {
     width: 100%;
@@ -400,7 +403,6 @@
 }
 .hover-icon a:hover{
     color:#86c33a;
-    background-color: white;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -430,8 +432,8 @@
     height: 100%;
 }
 .img-job img {
-    max-width: 100%; /* Resimlerin maksimum genişliği */
-    height: auto; /* Resimlerin oranlarını korumak için */
+    max-width: 100%; 
+    height: auto; 
 }
 .img-job::before {
     content: '';
@@ -811,8 +813,6 @@
     .navbar-list {
         visibility: hidden;
     }
-
-
 }
 /* header-responsive */
 
@@ -822,7 +822,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 180px;
     }
     .info-section .container {
         display: flex;
@@ -839,6 +839,12 @@
         display: flex;
         flex-direction: column;
     }
+    .correct-social {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
 
 }
 
@@ -852,7 +858,6 @@
         flex-direction: column;
         margin-bottom: 20px;
         gap: 10px;
-    
     }
     .info {
         justify-content: center;
@@ -1103,18 +1108,13 @@
     }
     .footer-info {
         padding-bottom: 700px;
-    
     }
 
     .footer-icon{
         padding-bottom: 700px;
-    
     }
 }
 @media screen and (max-width: 700px) {
-    .md-6 {
-    }
-
     .footer-icon {
         text-align: center; 
     }
@@ -1134,11 +1134,9 @@
     .footer-info {
         width: 100%;
         padding-bottom: 700px;
-    
     }
 
     .footer-icon{
         padding-bottom: 700px;
-    
     }
 }
