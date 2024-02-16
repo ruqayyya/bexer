@@ -141,18 +141,21 @@
     border-radius: 100px;
     transition: 0.5s;
     border: 2px solid black;
-    
 }
 .button-part-second a {
     text-decoration: none;
     color: black;
 }
-.button-part-second:hover  {
+.button-part-second:hover {
     color: white;
     background-color: rgb(80, 115, 37);
     width: 165px;
     height: 55px;
     border-radius: 100px;
+    border: transparent;
+}
+.button-part-second:hover a {
+    color: white;
     border: transparent;
 }
 .info-boxes {
@@ -810,8 +813,6 @@
     .navbar-list {
         visibility: hidden;
     }
-
-
 }
 /* header-responsive */
 
@@ -1107,18 +1108,13 @@
     }
     .footer-info {
         padding-bottom: 700px;
-    
     }
 
     .footer-icon{
         padding-bottom: 700px;
-    
     }
 }
 @media screen and (max-width: 700px) {
-    .md-6 {
-    }
-
     .footer-icon {
         text-align: center; 
     }
@@ -1138,11 +1134,9 @@
     .footer-info {
         width: 100%;
         padding-bottom: 700px;
-    
     }
 
     .footer-icon{
         padding-bottom: 700px;
-    
     }
 }
